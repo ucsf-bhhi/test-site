@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: macOS-latest
     env:
-      DEPLOY_BRACH: gh-pages
+      DEPLOY_BRANCH: gh-pages
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
@@ -28,7 +28,7 @@ jobs:
       - name: Render Rmarkdown files
         run: |
           git branch
-          RMD_PATH=$(git diff --name-only $(git rev-parse origin/{{ env.DEPLOY_BRACH }}) '*.Rmd')
+          RMD_PATH=$(git diff --name-only $(git rev-parse origin/${{ env.DEPLOY_BRANCH }}) '*.Rmd')
           Rscript -e 'for (f in commandArgs(TRUE)) if (file.exists(f)) rmarkdown::render(f)' ${RMD_PATH[*]}
 
       - name: Render Site
@@ -37,5 +37,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          branch: {{ env.DEPLOY_BRACH }} # The branch the action should deploy to.
+          branch: ${{ env.DEPLOY_BRANCH }} # The branch the action should deploy to.
           folder: . # The folder the action should deploy.
