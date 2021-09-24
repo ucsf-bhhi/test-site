@@ -11,9 +11,26 @@
     ],
     "date": "2021-09-24",
     "categories": [],
-    "contents": "\r\nHihihihi\r\n\r\n\r\n\r\n",
+    "contents": "\r\nHihihihi\r\nVersion\r\nCode: 7bc854c\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-09-24T13:12:41-07:00",
-    "input_file": "test-analysis2.knit.md"
+    "last_modified": "2021-09-24T13:29:42-07:00",
+    "input_file": {}
+  },
+  {
+    "path": "analyses/test-123/",
+    "title": "Test 123",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Eve Perry",
+        "url": {}
+      }
+    ],
+    "date": "2021-09-24",
+    "categories": [],
+    "contents": "\r\nVersion\r\nCode: 7bc854c\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-09-24T13:47:48-07:00",
+    "input_file": {}
   }
 ]

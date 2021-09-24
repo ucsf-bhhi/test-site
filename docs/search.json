@@ -5,8 +5,8 @@
       "title": "Test",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-09-23T16:19:47-07:00"
+      "last_modified": "2021-09-24T13:55:25-07:00"
     }
   ],
-  "collections": ["analyses/analyses.json"]
+  "collections": ["analyses/analyses.json", "posts/posts.json"]
 }
