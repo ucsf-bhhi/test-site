@@ -1,0 +1,43 @@
+---
+title: "Test 123"
+description: |
+  A short description of the post.
+author:
+  - name: Eve Perry
+    url: {}
+date: 09-24-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+# set default chunk options
+knitr::opts_chunk$set(
+  # don't show code
+  echo = FALSE,
+  # don't show warnings
+  warning = FALSE,
+  # don't show messages
+  message = FALSE,
+  # use the ragg package to render figures
+  dev = 'ragg_png',
+  # set default dpi for hi-res screens
+  dpi = 144
+)
+
+# set default ggplot theme
+ggplot2::theme_set(
+  ggplot2::theme_minimal(base_family = 'Lato') +
+    ggplot2::theme(
+      # disable in between gridlines
+      panel.grid.minor = ggplot2::element_blank(),
+      # set color of gridlines
+      panel.grid.major = ggplot2::element_line(color = 'grey90')
+    )
+)
+```
+
+
+`r bhhidistill::add_version()`
+
