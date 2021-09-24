@@ -37,7 +37,7 @@ ggplot2::theme_set(
     )
 )
 ```
-
+Some new stuff.
 
 `r bhhidistill::add_version()`
 
