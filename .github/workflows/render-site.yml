@@ -26,6 +26,7 @@ jobs:
 
       - name: Render Rmarkdown files
         run: |
+          git branch
           RMD_PATH=$(git diff --name-only $(git rev-parse gh-pages) '*.Rmd')
           Rscript -e 'for (f in commandArgs(TRUE)) if (file.exists(f)) rmarkdown::render(f)' ${RMD_PATH[*]}
 
