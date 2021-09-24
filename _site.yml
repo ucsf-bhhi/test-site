@@ -1,0 +1,16 @@
+name: test-site
+title: Test
+description: |
+  Test
+output_dir: docs
+navbar:
+  right:
+  - text: Home
+    href: index.html
+  search: no
+output: distill::distill_article
+collections:
+  analyses:
+    categories: yes
+  citations: no
+theme: theme.css
