@@ -22,7 +22,7 @@ jobs:
           remotes::install_github("ucsf-bhhi/bhhidistill")
         shell: Rscript {0}
 
-      - uses: r-lib/actions/setup-renv@v1
+      #- uses: r-lib/actions/setup-renv@v1
 
       - name: Render Rmarkdown files
         run: |
