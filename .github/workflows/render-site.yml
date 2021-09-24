@@ -29,7 +29,7 @@ jobs:
 
       - name: Render Rmarkdown files
         run: |
-          RMD_PATH=$(git diff --name-only $(git rev-parse ${{ env.DEPLOY_BRANCH }}) '*.Rmd')
+          RMD_PATH=$(git diff --name-only $(git rev-parse origin/${{ env.DEPLOY_BRANCH }}) '*.Rmd')
           Rscript -e 'for (f in commandArgs(TRUE)) if (file.exists(f)) rmarkdown::render(f)' ${RMD_PATH[*]}
 
       - name: Render Site
